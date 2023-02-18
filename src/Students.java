@@ -42,19 +42,6 @@ public class Students {
             System.out.println("inserita quarta riga ");
 
 
-           /* while (resultSet.next()){
-                String varname1 = ""
-                        + "CREATE TABLE `students` ( "
-                        + "  ` id_Students` int NOT NULL AUTO_INCREMENT, "
-                        + "  `last_ name` varchar(30) NOT NULL, "
-                        + "  `fiest_name` varchar(30) NOT NULL, "
-                        + "  PRIMARY KEY (` id_Students`), "
-                        + "  UNIQUE KEY ` id_Students_UNIQUE` (` id_Students`) ";}*/
-
-
-
-
-
 
         } catch (Exception e) {
              e.printStackTrace();
