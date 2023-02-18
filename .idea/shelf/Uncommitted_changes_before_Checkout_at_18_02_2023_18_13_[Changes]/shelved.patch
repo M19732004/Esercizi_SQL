@@ -1,0 +1,16 @@
+Index: src/Students.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport java.sql.*;\r\n\r\npublic class Students {\r\n    public static void main(String[] args) {\r\n\r\n        Connection connection= null;\r\n\r\n        try {\r\n            String DB_URL=\"jdbc:mysql://localhost:3306/newdb\";\r\n            String  user=\"developer\";\r\n            String  password=\"%Rudy%\";\r\n            connection=DriverManager.getConnection(DB_URL,user,password);\r\n\r\n            Statement statement;\r\n            statement = connection.createStatement();\r\n            String varname1=\"DROP TABLE IF EXISTS `newdb`.`students`\"   ;\r\n            statement.executeUpdate(varname1);\r\n            System.out.println(\"eliminazione tabella Students se esiste\");\r\n            String varname2 = \"\"\r\n                    + \"CREATE TABLE `students` ( \"\r\n                    + \"  ` id_Students` int NOT NULL AUTO_INCREMENT, \"\r\n                    + \"  `last_ name` varchar(30) NOT NULL, \"\r\n                    + \"  `fiest_name` varchar(30) NOT NULL, \"\r\n                    + \"  PRIMARY KEY (` id_Students`), \"\r\n                    + \"  UNIQUE KEY ` id_Students_UNIQUE` (` id_Students`) \"\r\n                    + \") ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\";\r\n            statement.executeUpdate(varname2);\r\n            System.out.println(\"creata tabella Students\");\r\n\r\n            String varname3=\"INSERT INTO `newdb`.`students` (` id_Students`, `last_ name`, `fiest_name`) VALUES (' 1',' Mirco', 'Pacciani')\";\r\n            statement.executeUpdate(varname3);\r\n            System.out.println(\"inserita prima riga \");\r\n            String varname4=\"INSERT INTO `newdb`.`students` (` id_Students`, `last_ name`, `fiest_name`) VALUES (' 2', 'Tib', 'Marconi')\";\r\n            statement.executeUpdate(varname4);\r\n            System.out.println(\"inserita seconda riga \");\r\n            String varname5=\"INSERT INTO `newdb`.`students` (` id_Students`, `last_ name`, `fiest_name`) VALUES ('3',' Olga', 'Solarre')\";\r\n            statement.executeUpdate(varname5);\r\n            System.out.println(\"inserita terza riga \");\r\n            String varname6=\"INSERT INTO `newdb`.`students` (` id_Students`, `last_ name`, `fiest_name`) VALUES ('4',' Daria', 'Fighetto')\";\r\n            statement.executeUpdate(varname6);\r\n            System.out.println(\"inserita quarta riga \");\r\n\r\n\r\n\r\n        } catch (Exception e) {\r\n             e.printStackTrace();\r\n        }\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/Students.java b/src/Students.java
+--- a/src/Students.java	
++++ b/src/Students.java	
+@@ -1,6 +1,6 @@
+ 
+ import java.sql.*;
+-
++//Crea Tabella
+ public class Students {
+     public static void main(String[] args) {
+ 

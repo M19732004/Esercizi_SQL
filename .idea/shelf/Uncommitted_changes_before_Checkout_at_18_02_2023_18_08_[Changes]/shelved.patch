@@ -1,0 +1,27 @@
+Index: src/Students04.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport java.sql.*;\r\n\r\npublic class Students04 {\r\n    public static void main(String[] args) {\r\n\r\n        Connection connection= null;\r\n\r\n        try {\r\n            String DB_URL=\"jdbc:mysql://localhost:3306/newdb\";\r\n            String  user=\"developer\";\r\n            String  password=\"%Rudy%\";\r\n            connection=DriverManager.getConnection(DB_URL,user,password);\r\n\r\n            Statement statement;\r\n            statement = connection.createStatement();\r\n            String varname1=\"DROP TABLE IF EXISTS `newdb`.`students`\"   ;\r\n            statement.executeUpdate(varname1);\r\n\r\n\r\n\r\n\r\n\r\n        } catch (Exception e) {\r\n             e.printStackTrace();\r\n        }\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/Students04.java b/src/Students04.java
+--- a/src/Students04.java	
++++ b/src/Students04.java	
+@@ -1,6 +1,6 @@
+ 
+ import java.sql.*;
+-
++//Esercizio 04
+ public class Students04 {
+     public static void main(String[] args) {
+ 
+@@ -14,7 +14,9 @@
+ 
+             Statement statement;
+             statement = connection.createStatement();
+-            String varname1="DROP TABLE IF EXISTS `newdb`.`students`"   ;
++            String varname1 = ""
++                    + "ALTER TABLE `newdb`.`students` "
++                    + "ADD COLUMN `countri` VARCHAR(30) NOT NULL AFTER `fiest_name`;";
+             statement.executeUpdate(varname1);
+ 
+ 

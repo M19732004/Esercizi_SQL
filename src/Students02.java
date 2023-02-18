@@ -1,7 +1,7 @@
 
 import java.sql.*;
 
-public class Students {
+public class Students02 {
     public static void main(String[] args) {
 
         Connection connection= null;
