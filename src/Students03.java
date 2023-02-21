@@ -9,15 +9,16 @@ public class Students03 {
         Connection connection= null;
 
         try {
-            String DB_URL="jdbc:mysql://localhost:3306/newdb";
-            String  user="developer";
-            String  password="%Rudy%";
+            String DB_URL="jdbc:mysql://localhost:3306/mydb";
+            String  user="root";
+            String  password="Mara32?%";
             connection=DriverManager.getConnection(DB_URL,user,password);
 
             Statement statement;
             statement = connection.createStatement();
-            String varname1="SELECT * FROM newdb.students;";
-            ResultSet rs= statement.executeQuery(varname1);
+
+            String varname7="SELECT * FROM mydb.students;";
+            ResultSet rs= statement.executeQuery(varname7);
 
             List<String>surnames=new ArrayList<>();
             while (rs.next()){
