@@ -23,7 +23,7 @@ public class Students03 {
             while (rs.next()){
 
                 System.out.println(rs.getString( "id_Students")+" "+
-                        rs.getString("last_ name")+" "
+                        rs.getString("last_name")+" "
                         +rs.getString("fiest_name") +"\n");
                 surnames.add(rs.getString("fiest_name"));
 
