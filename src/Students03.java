@@ -10,8 +10,8 @@ public class Students03 {
 
         try {
             String DB_URL="jdbc:mysql://localhost:3306/mydb";
-            String  user="root";
-            String  password="Mara32?%";
+            String  user="developer";
+            String  password="%Rudy%32";
             connection=DriverManager.getConnection(DB_URL,user,password);
 
             Statement statement;
