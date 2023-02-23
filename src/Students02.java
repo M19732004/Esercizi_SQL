@@ -9,7 +9,7 @@ public class Students02 {
         try {
             String DB_URL="jdbc:mysql://localhost:3306/mydb";
             String  user="developer";
-            String  password="%Rudy%32";
+            String  password="%Rudy%32" +"";
             connection=DriverManager.getConnection(DB_URL,user,password);
 
             Statement statement;
@@ -20,7 +20,8 @@ public class Students02 {
             System.out.println("eliminazione tabella Students se esiste");
 
             String varname2 = ""
-                    + "CREATE TABLE `students` ( "
+
+                    + "CREATE TABLE IF NOT EXISTS`students` ( "
                     + "  `id_Students` int NOT NULL AUTO_INCREMENT, "
                     + "  `last_name` varchar(30) NOT NULL, "
                     + "  `fiest_name` varchar(30) NOT NULL, "

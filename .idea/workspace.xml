@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a5abbc5-4171-4f88-99f1-d66400a70913" name="Changes" comment="Esercizio04_view">
+    <list default="true" id="9a5abbc5-4171-4f88-99f1-d66400a70913" name="Changes" comment="Esercizio04_view-Agiornamento con la password-developer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Students03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Students03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Students04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Students04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Students04_view.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Students04_view.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Students02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Students02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677017752549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Esercizio04_view-Agiornamento con la password-developer">
+      <created>1677159648962</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677159648962</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +162,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="ex1" />
                       </list>
                     </value>
                   </entry>
@@ -174,6 +179,7 @@
     <MESSAGE value="Esercizio 02" />
     <MESSAGE value="Esercizio 04.creata colonna,aggiunto valori nella colonna" />
     <MESSAGE value="Esercizio04_view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Esercizio04_view" />
+    <MESSAGE value="Esercizio04_view-Agiornamento con la password-developer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Esercizio04_view-Agiornamento con la password-developer" />
   </component>
 </project>
